@@ -15,6 +15,7 @@ namespace MagicVilla_Api.Datos
         //definimos los modelos que queremos que se creen como tablas en la base de datos
         public DbSet<Villa> Villas { get; set; }
 
+        /* Agregar valores iniciales a la base de datos, ejecutar con add-migration y update-database      
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Villa>().HasData(
@@ -46,6 +47,7 @@ namespace MagicVilla_Api.Datos
                     }
                 );
         }
+        */
 
     }
 }
